@@ -35,7 +35,7 @@ class Router
         if ($requestType  === 'GET' && $check_uri[0] === 'products') {
             preg_match('/' . "^(products\/*)$" . '/', $uri, $matches);
             if (!empty($matches)) {
-                header('Location: /ecommerce');
+                header('Location: /e-commerce-cart');
                 exit();
             }
         }

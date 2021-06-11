@@ -59,9 +59,9 @@
         $(".delete").click((e) => {
             $.ajax({
                 type: "DELETE",
-                url: `/ecommerce/cart/${e.target.dataset.id}`,
+                url: `/e-commerce-cart/cart/${e.target.dataset.id}`,
                 success: (data) => {
-                    window.location.href = "/ecommerce/cart";
+                    window.location.href = "/e-commerce-cart/cart";
                 },
                 error: () => {
                     alert("fail");
@@ -74,12 +74,12 @@
         $(".count").change((e) => {
             $.ajax({
                 type: "POST",
-                url: `/ecommerce/cart/${e.target.dataset.id}`,
+                url: `/e-commerce-cart/cart/${e.target.dataset.id}`,
                 data: {
                     quantity: e.target.value
                 },
                 success: (data) => {
-                    window.location.href = "/ecommerce/cart";
+                    window.location.href = "/e-commerce-cart/cart";
                 },
                 error: () => {
                     alert("fail");

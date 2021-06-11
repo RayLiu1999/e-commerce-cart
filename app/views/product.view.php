@@ -42,7 +42,7 @@
         $('#addToCart').click((e) => {
             $.ajax({
                 type: "POST",
-                url: "/ecommerce/products",
+                url: "/e-commerce-cart/products",
                 data: {
                     product_id: e.target.dataset.id,
                     quantity: $('#count').val()

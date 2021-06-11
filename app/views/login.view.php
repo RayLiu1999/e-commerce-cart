@@ -7,7 +7,7 @@
             <div class="card-title">
                 <h2 class="d-flex justify-content-center">會員登入</h2>
             </div>
-            <form action="/ecommerce/login" method="POST">
+            <form action="/e-commerce-cart/login" method="POST">
                 <div class="form-group">
                     <label for="email">電子信箱</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="請輸入電子信箱" autocomplete="off">
@@ -31,14 +31,14 @@
             var a = 1;
             $.ajax({
                 type: 'POST',
-                url: '/ecommerce/login',
+                url: '/e-commerce-cart/login',
                 data: {
                     email: $('#email').val(),
                     password: $('#password').val()
                 },
                 success: (data) => {
                     if (data == 1) {
-                        window.location.href = '/ecommerce';
+                        window.location.href = '/e-commerce-cart';
                     } else {
                         console.log(data);
                         $('#error_email').html('');

@@ -7,7 +7,7 @@
                 <div class="card-title ">
                     <h2 class="d-flex justify-content-center">會員註冊</h2>
                 </div>
-                <form action="/ecommerce/register" method="POST">
+                <form action="/e-commerce-cart/register" method="POST">
                     <div class="form-group">
                         <label for="username">使用者名稱</label>
                         <input type="text" class="form-control" id="username" name="username" placeholder="請輸入名稱" autocomplete="off">
@@ -40,7 +40,7 @@
         $('.btn').click(function() {
             $.ajax({
                 type: 'POST',
-                url: '/ecommerce/register',
+                url: '/e-commerce-cart/register',
                 data: {
                     username: $('#username').val(),
                     email: $('#email').val(),
@@ -62,7 +62,7 @@
                     };
 
                     if (!data) {
-                        window.location.href = '/ecommerce';
+                        window.location.href = '/e-commerce-cart';
                     }
                 },
                 error: function() {

@@ -15,7 +15,7 @@ function view($name, $data = [])
 
 function redirect($path)
 {
-    return header("Location: /ecommerce/${path}");
+    return header("Location: /e-commerce-cart/${path}");
 }
 
 require __DIR__.'/app/routes.php';
