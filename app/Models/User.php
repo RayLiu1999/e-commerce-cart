@@ -15,8 +15,9 @@ class User
 
     public function getUser($email)
     {
-        $this->db->query("SELECT id, username, email, password FROM users WHERE '$email'");
+        $this->db->query("SELECT password FROM users WHERE email = '".$email."'");
         $user = $this->db->result();
+
         return $user;
     }
 
@@ -24,6 +25,7 @@ class User
     {
         $this->db->query("SELECT * FROM users WHERE username = '$username' OR email = '$email'");
         $accounts = $this->db->resultAll();
+        
         return $accounts;
     }
 

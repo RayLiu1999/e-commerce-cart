@@ -28,7 +28,7 @@ class UserController
             }
 
             $user = $this->model->getUser($email);  // 用email去搜資料庫，再去比對密碼
-
+            
             if (empty($user)) {
                 throw new \Exception('帳號或密碼輸入錯誤');
             }
