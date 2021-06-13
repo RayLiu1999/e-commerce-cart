@@ -1,6 +1,6 @@
 <?php require 'layouts/header.php'; ?>
 
-<div class="container">
+<div class="container" style="flex-grow: 1;">
     <div class="alert alert-success" role="alert" style="display: none;">
         加入購物車成功!
     </div>

@@ -1,18 +1,14 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-
-    #代表 match_uri 不比對大小寫差異。
-    #RewriteCond ${REQUEST_URI} !^ecommerce\/(.*)$
-    #RewriteCond ${REQUEST_URI} !^ecommerce\/public\/index.php)$ [R=404, L]
-
-    #代表成功執行這個 Rule 後就會停止，不繼續往下執行
-    #也可以回傳 400、200、404 等的 Status Code，通常會跟 [L] 一起代表結束，也是除錯常用的 Flag
     
-    #代表如果有這個檔案
+    #代表如果路徑沒有檔案
     RewriteCond %{REQUEST_FILENAME} !-f
 
-    #代表如果有這個資料夾
+    #代表如果路徑沒有資料夾
     RewriteCond %{REQUEST_FILENAME} !-d
 
+    #就執行index.php
     RewriteRule ^ index.php [L]
+
+
 </IfModule>
