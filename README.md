@@ -6,6 +6,6 @@
 - Clone the repository with __git clone__
 - Copy __.env.example__ file to __.env__ and edit database credentials there
 - Run __composer install__
-- Import *ecom.sql* to MySQL database
+- Import __ecom.sql__ to MySQL database
 - Use Apache to run porject
 
