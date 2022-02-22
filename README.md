@@ -1,5 +1,5 @@
 # E-commerce-Cart
-> This is project with Cart.
+> See [Demo](https://liu-yucheng.com/e-commerce-cart/).
 
 ## How to use
 
@@ -9,4 +9,3 @@
 - Import *ecom.sql* to MySQL database
 - Use Apache to run porject
 
-See [Demo](https://liu-yucheng.com/e-commerce-cart/).
