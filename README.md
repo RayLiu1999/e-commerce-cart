@@ -1,5 +1,6 @@
 # E-commerce-Cart
-> See [Demo](https://liu-yucheng.com/e-commerce-cart/).
+
+> See [Demo](https://liu-yucheng.com/e-commerce-cart/)
 
 ## How to use
 
